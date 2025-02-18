@@ -29,28 +29,8 @@ document.addEventListener("keypress",(e)=>{
         if(inputText.value == ""){
             alert("You have to enter some number to perform calculations");
         }else{
+            console.log(inputText.value)
             inputText.value = eval(inputText.value);
         }
     }
 });
-
-
-
-// buttons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         if (button.value === "=") {
-//                 // Evaluate the expression and update the inputText value
-//                 inputText.value = eval(inputText.value);
-//         } else if (button.value === "AC") {
-//             inputText.value = "";
-//         }
-//         else if(button.value ==="DEL"){
-//             let deleteOne = inputText.value.toString().slice(0,-1);
-//             inputText.value = deleteOne
-//         }
-//         else {
-//             // Append the button value to the inputText
-//             inputText.value += button.value;
-//         }
-//     });
-// });
